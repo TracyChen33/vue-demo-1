@@ -1,7 +1,11 @@
 <template>
   <div>
     {{n}}
+<<<<<<< HEAD
     <div class="cell" @click="onClickSelf">
+=======
+    <div class="cell" v-on:click="OnClickSelf">
+>>>>>>> 03b2e0e2f1ccc69b2a2783fba8e3a485cc869c62
       <template v-if="a">{{text}}</template>
       <template v-else></template>
     </div>
@@ -10,12 +14,20 @@
 
 <script>
   export default {
+<<<<<<< HEAD
     props: ['n'],
+=======
+    props:['n'],
+>>>>>>> 03b2e0e2f1ccc69b2a2783fba8e3a485cc869c62
     data() {
       return {a: false, text: 'O'}
     },
     methods: {
+<<<<<<< HEAD
       onClickSelf() {
+=======
+      OnClickSelf() {
+>>>>>>> 03b2e0e2f1ccc69b2a2783fba8e3a485cc869c62
         this.a = true
         this.$emit('click')
       }
