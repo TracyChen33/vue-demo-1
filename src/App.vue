@@ -1,26 +1,16 @@
 <template>
-  <div class="cell" v-on:click="a=true">
-    <template v-if="a">X</template>
-    <template v-else></template>
+  <div>
+    <Cell />
+    <Cell />
+    <Cell />
   </div>
 </template>
 
 <script>
+  import Cell from "./Cell";
   export default {
-    data(){
-      return{a:false}
-    }
-  }
+    components:{Cell}
+  };
 </script>
 
-<style>
- .cell{
-   border: 1px solid black;
-   width:100px;
-   height: 100px;
-   display: flex;
-   justify-content:center;
-   align-items: center;
-   font-size: 80px;
- }
-</style>
+<style></style>
