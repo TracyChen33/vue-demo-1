@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="row">
-      <Cell/>
-      <Cell/>
-      <Cell/>
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
     </div>
     <div class="row">
-      <Cell/>
-      <Cell/>
-      <Cell/>
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
     </div>
     <div class="row">
-      <Cell/>
-      <Cell/>
-      <Cell/>
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
+      <Cell v-on:click="onClickCell" />
     </div>
   </div>
 </template>
@@ -22,7 +22,12 @@
   import Cell from './Cell'
 
   export default {
-    components: {Cell}
+    components: {Cell},
+    methods:{
+      onClickCell(){
+        console.log("cell be clicked")
+      }
+    }
   }
 </script>
 
