@@ -1,16 +1,33 @@
 <template>
   <div>
-    <Cell />
-    <Cell />
-    <Cell />
+    <div class="row">
+      <Cell/>
+      <Cell/>
+      <Cell/>
+    </div>
+    <div class="row">
+      <Cell/>
+      <Cell/>
+      <Cell/>
+    </div>
+    <div class="row">
+      <Cell/>
+      <Cell/>
+      <Cell/>
+    </div>
   </div>
 </template>
 
 <script>
-  import Cell from "./Cell";
+  import Cell from './Cell'
+
   export default {
-    components:{Cell}
-  };
+    components: {Cell}
+  }
 </script>
 
-<style></style>
+<style>
+  .row{
+    display: flex;
+  }
+</style>
